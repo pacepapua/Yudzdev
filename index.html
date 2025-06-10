@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YUDZDEV - Jasa Pembuatan Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">YUDZDEV</div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#services">Layanan</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1>Butuh Website Profesional?</h1>
+                <p>Saya menyediakan jasa pembuatan website yang modern, responsif, dan sesuai kebutuhan Anda.</p>
+                <a href="#contact" class="btn-primary">Hubungi Saya</a>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <div class="container">
+                <h2>Layanan Kami</h2>
+                <div class="service-grid">
+                    <div class="service-item">
+                        <h3>Website Portofolio</h3>
+                        <p>Tampilkan karya terbaik Anda dengan website yang menarik dan profesional.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Website Bisnis & Company Profile</h3>
+                        <p>Perkenalkan bisnis Anda ke dunia digital dengan website yang informatif dan kredibel.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Landing Page</h3>
+                        <p>Fokus pada konversi dengan halaman arahan yang efektif dan mengundang.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Mari Berkolaborasi</h2>
+                <p>Siap untuk memiliki website impian Anda? Hubungi saya sekarang!</p>
+                <div class="contact-info">
+                    <p>Email: <a href="mailto: abiyyuda01@gmail.com">abiyyuda01@gmail.com</a></p>
+                    <p>WhatsApp: <a href="https://wa.me/62895381822822" target="_blank">+62 8953-8182-2822</a></p>
+                    <p>Lokasi: Indonesia</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 YUDZDEV. Hak Cipta Dilindungi Undang-Undang.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<style>
+    /* General Styling (Sama seperti sebelumnya) */
+:root {
+    --color-sky-blue: #87CEEB; /* Biru langit */
+    --color-dark-blue: #007bff; /* Biru yang sedikit lebih gelap jika perlu */
+    --color-black: #1a1a1a;
+    --color-white: #ffffff;
+    --color-gray: #f4f4f4; /* Untuk latar belakang section */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: var(--color-white); /* Warna teks default putih */
+    background-color: var(--color-black); /* Latar belakang utama hitam */
+}
+
+a {
+    color: var(--color-sky-blue);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--color-white);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: var(--color-black);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 1.8em;
+    font-weight: 600;
+    color: var(--color-sky-blue);
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    color: var(--color-white);
+    font-weight: 400;
+    font-size: 1.1em;
+    padding: 5px 0;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: var(--color-sky-blue);
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease-out;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Hamburger Menu Styling */
+.hamburger {
+    display: none; /* Sembunyikan secara default di desktop */
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    padding: 0;
+    z-index: 1100; /* Pastikan di atas navbar */
+}
+
+.hamburger .bar {
+    width: 100%;
+    height: 3px;
+    background-color: var(--color-sky-blue);
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hero Section (Sama seperti sebelumnya) */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://via.placeholder.com/1500x800/87CEEB/FFFFFF?text=Website+Background') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.hero-content h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    color: var(--color-sky-blue);
+}
+
+.hero-content p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-primary {
+    background-color: var(--color-sky-blue);
+    color: var(--color-black);
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-white);
+    transform: translateY(-3px);
+}
+
+/* Services Section (Sama seperti sebelumnya) */
+.services-section {
+    padding: 80px 0;
+    background-color: var(--color-black);
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: var(--color-sky-blue);
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.service-item {
+    background-color: #2a2a2a;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    background-color: #3a3a3a;
+}
+
+.service-item h3 {
+    color: var(--color-sky-blue);
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.service-item p {
+    color: var(--color-gray);
+    font-size: 1em;
+}
+
+/* Contact Section (Sama seperti sebelumnya) */
+.contact-section {
+    padding: 80px 0;
+    background-color: var(--color-sky-blue);
+    color: var(--color-black);
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: var(--color-black);
+}
+
+.contact-section p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.contact-info p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: var(--color-black);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.contact-info a:hover {
+    color: var(--color-white);
+}
+
+/* Footer Styling (Sama seperti sebelumnya) */
+footer {
+    background-color: var(--color-black);
+    color: var(--color-gray);
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    border-top: 1px solid #333;
+}
+
+
+/* Responsive Design - Modifikasi Besar */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px; /* Pertahankan padding */
+    }
+
+    .nav-links {
+        display: none; /* Sembunyikan nav-links secara default di mobile */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Sesuaikan dengan tinggi navbar */
+        left: 0;
+        background-color: var(--color-black);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+        padding: 20px 0;
+        border-top: 1px solid #333;
+    }
+
+    .nav-links.active {
+        display: flex; /* Tampilkan nav-links saat aktif */
+    }
+
+    .nav-links li {
+        margin: 0; /* Hapus margin kiri */
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links a {
+        padding: 10px 0;
+        display: block; /* Pastikan link mengisi lebar */
+        width: 100%;
+    }
+
+    .hamburger {
+        display: flex; /* Tampilkan hamburger di mobile */
+    }
+
+    /* Efek X pada hamburger saat aktif */
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+    .hero-content h1 {
+        font-size: 2.2em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .services-section h2,
+    .contact-section h2 {
+        font-size: 2em;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    const navItems = document.querySelectorAll('.nav-links li a'); // Ambil semua link navigasi
+
+    // Fungsi untuk toggle menu hamburger
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navLinks.classList.toggle('active');
+        document.body.classList.toggle('no-scroll'); // Tambahkan/hapus no-scroll pada body
+    });
+
+    // Tutup menu saat link diklik (khusus mobile)
+    navItems.forEach(item => {
+        item.addEventListener('click', () => {
+            if (window.innerWidth <= 768) { // Hanya berlaku di ukuran layar kecil
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+                document.body.classList.remove('no-scroll');
+            }
+        });
+    });
+
+    // Smooth Scrolling (Kode yang sudah ada sebelumnya)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+});
+</script>
